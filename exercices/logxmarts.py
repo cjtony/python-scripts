@@ -8,7 +8,7 @@ email = browser.find_element_by_name('login')
 email.send_keys('marco.carranza@xmarts.com')
 passw = browser.find_element_by_name('password')
 passw.send_keys('123456')
-#browser.find_element_by_class_name('btn-block').click()
+browser.find_element_by_class_name('btn-block').click()
 browser.implicitly_wait(10)
 
 val_email = email.get_attribute('value')
